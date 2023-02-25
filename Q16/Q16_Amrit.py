@@ -2,9 +2,12 @@
 # Underneath the fixed code, describe what the initial issue was and how
 # you fixed it.
 
-file = open("new_file.txt", "r")
+# This was read, when it should have been write
+file = open("new_file.txt", "w")
 name = input("Please enter a first name: ")
 file.write(name)
-file.close()
+# The file closed here
 age = input("Please enter a last name: ")
 file.write(age)
+file.close()
+

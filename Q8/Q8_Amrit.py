@@ -60,7 +60,5 @@ Examples:
 
 
 def morse_code_translator(sentence):
-    """
-    Write your function here!
-    """
-    pass
+    return ' '.join(['/' if letter == ' ' else MORSE_CODE_DICTIONARY[letter] for letter in sentence.upper()]).strip()
+

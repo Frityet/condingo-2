@@ -18,9 +18,6 @@ Notes:
     You may assume you won't get any invalid operations (like dividing by 0)
 """
 
+def calc(num1: int, num2: int, operation: str) -> float:
+    return num1 + num2 if operation == '+' else num1 - num2 if operation == '-' else num1 * num2 if operation == '*' else num1 // num2
 
-def calc(num1, num2, operation):
-    """
-    Write your function here!
-    """
-    pass

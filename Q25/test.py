@@ -1,5 +1,5 @@
 from colorama import Fore
-from Q25_INSERTTEAMNUMBER import number_transform
+from Q25_Amrit import number_transform
 
 TEST_INPUT = [0, 1, 10, 11, 1000]
 TEST_OUTPUT = [0, 4, 5, 34, 500]

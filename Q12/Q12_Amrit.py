@@ -21,8 +21,6 @@ Examples:
 """
 
 
-def get_median(nums):
-    """
-    Write your function here!
-    """
-    pass
+def get_median(nums: [int]) -> int:
+    nums.sort()
+    return nums[len(nums) // 2] if len(nums) % 2 == 1 else (nums[len(nums) // 2] + nums[len(nums) // 2 - 1]) / 2

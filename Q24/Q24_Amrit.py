@@ -50,16 +50,17 @@ HOUSEHOLD_ENERGY_DATA = [
 
 # GET AVERAGE ENERGY CONSUMPTION OF RESIDENCES IN ONTARIO AND PRINT IT
 number_of_homes = 0
+total_energy_in_every_home = 0
 for data in HOUSEHOLD_ENERGY_DATA:
-    number_of_homes += 1
-    if data['province'] === "Ontario":
+    number_of_homes += int(data["number_of_families"])
+    if data['info']['province'] == "Ontario":
         total_energy_in_every_home = data['monthly_energy_in_kwh']
 
-average = total_energy_in_every_home // number_homes
+average = total_energy_in_every_home // number_of_homes
 print(average)
 
 # GET THE LARGEST NUMBER OF HOUSEHOLD OCCUPANTS IN RESIDENCES AND PRINT IT
-maximum_residents = float('inf')
+maximum_residents = 0
 for data in HOUSEHOLD_ENERGY_DATA:
     if data["number_of_residents"] > maximum_residents:
         maximum_residents = data["number_of_families"]

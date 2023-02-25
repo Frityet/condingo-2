@@ -23,8 +23,8 @@ Notes:
 """
 
 
-def two_sum(nums, target):
-    """
-    Write your function here!
-    """
-    pass
+def two_sum(nums: [int], target: int):
+    for i in range(len(nums)):
+        for j in range(i + 1, len(nums)):
+            if nums[i] + nums[j] == target:
+                return [nums[i], nums[j]] if nums[i] < nums[j] else [nums[j], nums[i]]

@@ -1,5 +1,5 @@
 from colorama import Fore
-from Q15_INSERTTEAMNUMBER import two_sum
+from Q15_Amrit import two_sum
 
 TEST_INPUT = [
     [[2, 7, 11, 15], 9],

@@ -15,8 +15,10 @@ Notes:
 """
 
 
-def median_of_list(list_of_nums):
+def median_of_list(list_of_nums: [int]) -> int:
     """
-    Write your function here!
+    if #list_of_nums % 2 == 0 then calculate the average of the two middle numbers
+    else return the middle number
     """
-    pass
+    list_of_nums.sort()
+    return (list_of_nums[len(list_of_nums) // 2] + list_of_nums[len(list_of_nums) // 2 - 1]) / 2 if len(list_of_nums) % 2 == 0 else list_of_nums[len(list_of_nums) // 2]

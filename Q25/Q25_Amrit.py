@@ -11,9 +11,9 @@ Examples:
     3 => 10
 """
 
-
-def number_transform(num):
+def number_transform(x):
     """
     Write your function here!
     """
+    return x / 2 if x % 2 == 0 else x * 3 + 1
     pass
